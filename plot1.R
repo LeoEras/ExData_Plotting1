@@ -12,10 +12,10 @@ download.file(fileUrl, destfile="data/dataset.zip")
 
 # Unzip dataSet to /data directory, save the filename in file variable
 unzip(zipfile="data/dataset.zip", exdir="data")
-file<-"data/household_power_consumption.txt"
 
 #STEP 1. Read the file contents and filter by stated dates
 #If you have already done the previous steps, I suggest you start here by this step in the other .R files as well
+file<-"data/household_power_consumption.txt"
 data<-fread(file)
 data<-filter(data, Date %in% c("1/2/2007","2/2/2007"))
 
