@@ -32,5 +32,5 @@ with(data, plot(Date, Sub_metering_1, type="n", lty = 1, lwd = 1, xlab = "", yla
 with(data, lines(Date, Sub_metering_1))
 with(data, lines(Date, Sub_metering_2, col="red"))
 with(data, lines(Date, Sub_metering_3, col="blue"))
-legend("topright", legend = c("Sub_mettering_1", "Sub_mettering_2", "Sub_mettering_3"), col = c("black", "red", "blue"), pch = "_")
+legend("topright", legend = c("Sub_mettering_1", "Sub_mettering_2", "Sub_mettering_3"), col = c("black", "red", "blue"), lty="solid")
 dev.off()
