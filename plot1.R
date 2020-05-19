@@ -1,4 +1,7 @@
-#STEP 0, data preparation
+#STEP 0, data preparation & useful libraries
+library(dplyr)
+library(data.table)
+
 if(!file.exists("data")){
   dir.create("data")
 }
